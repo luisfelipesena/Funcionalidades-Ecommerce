@@ -209,7 +209,7 @@ const contexto = async (ctx) => {
 }
 
 
-function addNovoProduto (body) { //Produto Adicionado em formato de Array (permite add simultâneas)
+function addNovoProduto (body) { //Produto Adicionado em formato de Array (permite add simultâneas) [{},{}]
     let count = 0;
     if (body.length == undefined) {
         return null;
@@ -319,8 +319,8 @@ function deletarProduto (id) {
     }
 }
 
-function novoPedido (body) { //Pedido Adicionado em formato de Array (permite add simultâneas)
-    let count = 0;
+function novoPedido (body) { //Pedido Adicionado em formato de Array (permite add simultâneas) [{},{}]
+    let count = 0; 
     let estado = "incompleto";
     if (body.length == undefined) {
         return null;
